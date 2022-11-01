@@ -4,15 +4,19 @@ public class RunSandwichWorld {
         RunSandwichWorld runSandwich = new RunSandwichWorld();
 
     }
-//public Sandwich(String pBun, boolean pHot, int pIngredients, char pSize){
+//public Sandwich(String pBun, String pIngredients, boolean pHot, int pIngredients, char pSize, boolean pCanSpeak){
     public RunSandwichWorld() {
         Sandwich blt;
         blt = new Sandwich();
-        blt = new Sandwich("bun",true,3,'r');
+        blt = new Sandwich("bun", "turkey cheese", true,3,'r',false);
         blt.printInfo();
 
         Sandwich pbj;
-        pbj = new Sandwich("wholewheat",false,2,'s');
+        pbj = new Sandwich("wholewheat","peanut butter, jelly",false,2,'s',true);
         pbj.printInfo();
+
+        Sandwich burger;
+        burger = new Sandwich("sesamebun","burger, cheese, lettuce, tomato",true,4,'l',true);
+        burger.printInfo();
     }
 }
